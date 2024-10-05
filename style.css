@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: 'Syne', sans-serif;
+}
+header {
+    background: #f8f9fa;
+}
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+#home {
+    background: rgb(233, 247, 250);
+    padding: 150px 0; /* Increased padding for more space */
+}
+#services {
+    background: #f1f1f1;
+    padding: 120px 0; /* Increased padding for more space */
+}
+#about {
+    background: #fff;
+    padding: 120px 0; /* Increased padding for more space */
+}
+#contact {
+    background: #f8f9fa;
+    padding: 120px 0; /* Increased padding for more space */
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Customization */
+.navbar {
+    background-color: black;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Mobile Navbar Dropdown Customization */
+.navbar-toggler {
+    border-color: white;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Media Query for Mobile */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        background-color: black;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        border-bottom: 1px solid white;
+        background-color: white;
+        color: black !important; /* Changes menu item color on mobile */
+    }
+}
