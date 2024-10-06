@@ -53,7 +53,7 @@ function sendEmail(formData) {
             {
                 Swal.fire({
                     title: "Success!",
-                    text: "Message sent successfully!",
+                    text: "Message sent successfully! we'll reach out to you via the provided phone number with next steps for your website.",
                     icon: "success"
                   });
             }
