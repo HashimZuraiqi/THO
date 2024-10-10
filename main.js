@@ -1,5 +1,5 @@
-// Smooth Scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Smooth Scrolling for anchor links in the navbar
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -9,7 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
 // Select form elements
 const form = document.querySelector("form");
 const fullNameEn = document.getElementById("fullname-en");
@@ -39,7 +38,6 @@ function sendEmail(formData) {
             <p><strong>Full Name (Arabic):</strong> ${formData.fullNameAr}</p>
             <p><strong>Email:</strong> ${formData.email}</p>
             <p><strong>Phone Number:</strong> ${formData.phone}</p>
-            <p><strong>Website Type:</strong> ${formData.websiteType}</p>
             <p><strong>Template Chosen:</strong> ${formData.template}</p>
             <p><strong>Professional Background:</strong> ${formData.background}</p>
             <p><strong>Instagram:</strong> ${formData.instagram || 'N/A'}</p>

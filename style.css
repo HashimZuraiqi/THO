@@ -58,6 +58,41 @@ footer {
     color: #007bff;   /* Icon color */
     margin: 0 auto;
 }
+/* Template Section Styling */
+#templates {
+    background-color: #f8f9fa;
+}
+
+.template-card {
+    width: 100%;
+    max-width: 250px; /* Limit max-width for better responsiveness */
+    transition: transform 0.3s ease;
+}
+
+.template-card img {
+    border-radius: 10px; /* Add some subtle rounding */
+}
+
+/* Scaling effect on hover */
+.template-card:hover {
+    transform: scale(1.05);
+}
+
+/* Carousel control icons styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+/* Adjust font size for templates */
+#templates h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
 
 /* Media Query for Mobile */
 @media (max-width: 992px) {
