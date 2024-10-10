@@ -69,7 +69,6 @@ form.addEventListener("submit", (e) => {
         fullNameAr: fullNameAr.value.trim(),
         email: email.value.trim(),
         phone: phone.value.trim(),
-        websiteType: document.querySelector('input[name="website-type"]:checked').value,
         template: template.value,
         background: background.value.trim(),
         instagram: instagram.value.trim(),
@@ -79,7 +78,7 @@ form.addEventListener("submit", (e) => {
     };
 
     // Basic validation to ensure all required fields are filled
-    if (!formData.fullNameEn || !formData.fullNameAr || !formData.email || !formData.phone || !formData.websiteType || !formData.template || !formData.background) {
+    if (!formData.fullNameEn || !formData.fullNameAr || !formData.email || !formData.phone || !formData.template || !formData.background) {
         alert("Please fill out all the required fields.");
         return;
     }
